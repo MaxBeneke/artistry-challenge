@@ -5,3 +5,6 @@
     <li> Artist: <%= link_to "#{artist.name}", artist_path(artist.id) %> </li>
     <%end%> 
 </ol>
+
+<%= link_to "Create new artist", new_artist_path%>
+<%= link_to "Rent an Instrument", new_rental_path%>

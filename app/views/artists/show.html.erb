@@ -2,6 +2,7 @@
 
 <p> <%= @artist.name %> </p>
 <p> <%= @artist.title %> </p>
+<p> <%= @artist.age%> </p>
 <%= link_to "Edit this artist", "/artists/#{@artist.id}/edit"%>
 
 
@@ -10,4 +11,6 @@
 <%= instrument.name%>
 
 <%end%>
+
+<%= button_to "Delete artist", artist_path(@artist), method: "delete" %>
 
